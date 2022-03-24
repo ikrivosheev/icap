@@ -2,7 +2,7 @@
 name = "icap"
 version = "0.0.1"
 readme = "REAMDE.md"
-documentation = "https://docs.rs/http"
+documentation = "https://docs.rs/icap"
 repository = "https://github.com/ikrivosheev/icap"
 license = "Apache-2.0"
 author = "Ivan Krivosheev <py.krivosheev@gmail.com>"

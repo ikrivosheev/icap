@@ -7,4 +7,3 @@ pub use crate::method::Method;
 pub use crate::request::Request;
 pub use crate::response::Response;
 pub use crate::version::Version;
-

@@ -27,4 +27,3 @@ impl fmt::Debug for Version {
         })
     }
 }
-
