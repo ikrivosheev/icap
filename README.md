@@ -2,7 +2,7 @@
 
 A general purpose library of common ICAP types
 
-[![CI](https://github.com/ikrivosheev/icap/workflows/CI/badge.svg)](https://github.com/ikrivosheev/icap/actions/workflows/tests.yml)
+[![Build Status](https://github.com/ikrivosheev/icap/actions/workflows/tests.yml/badge.svg)](https://github.com/ikrivosheev/icap/actions/workflows/tests.yml)
 
 
 # License
