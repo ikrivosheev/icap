@@ -1,6 +1,6 @@
+use crate::body::Body;
 use crate::method::Method;
 use crate::version::Version;
-use crate::body::Body;
 
 use http::request::Parts as HttpRequestParts;
 use http::response::Parts as HttpResponseParts;
@@ -31,21 +31,14 @@ pub struct Parts {
 }
 
 impl Request<()> {
-    pub fn reqmode<T>(uri: T, http_request: Option<HttpRequestParts>) {
+    pub fn reqmode<T>(uri: T, http_request: Option<HttpRequestParts>) {}
 
-    }
+    pub fn respmode<T>(uri: T, http_response: Option<HttpResponseParts>) {}
 
-    pub fn respmode<T>(uri: T, http_response: Option<HttpResponseParts>) {
-
-    }
-
-    pub fn options<T>(uri: T) {
-
-    }
+    pub fn options<T>(uri: T) {}
 }
 
 impl<T> Request<T> {
-    
     pub fn method(&self) -> &Method {
         &self.head.method
     }
@@ -77,7 +70,7 @@ impl<T> Request<T> {
     pub fn headers_mut(&mut self) -> &mut HeaderMap {
         &mut self.head.headers
     }
-    
+
     pub fn body(&self) -> &Option<Body<T>> {
         &self.body
     }
@@ -89,5 +82,4 @@ impl<T> Request<T> {
     pub fn into_body(self) -> Option<T> {
         self.body.map(|b| b.into_inner())
     }
-
 }

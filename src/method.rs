@@ -9,7 +9,6 @@ pub struct Method(Inner);
 #[non_exhaustive]
 pub struct InvalidMethod;
 
-
 #[derive(Clone, PartialEq, Eq, Hash)]
 enum Inner {
     Reqmod,
