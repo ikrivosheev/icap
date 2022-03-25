@@ -6,9 +6,9 @@ use std::fmt;
 pub struct Method(Inner);
 
 /// A possible error value when converting `Method` from bytes.
-pub struct InvalidMethod {
-    _priv: (),
-}
+#[non_exhaustive]
+pub struct InvalidMethod;
+
 
 #[derive(Clone, PartialEq, Eq, Hash)]
 enum Inner {
@@ -62,9 +62,7 @@ impl AsRef<str> for Method {
 
 impl InvalidMethod {
     fn new() -> InvalidMethod {
-        InvalidMethod {
-            _priv: (),
-        }
+        InvalidMethod
     }
 }
 

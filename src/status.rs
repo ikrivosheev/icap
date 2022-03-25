@@ -105,9 +105,9 @@ status_codes! {
     (404, NOT_FOUND, "Not Found");
 
     /// 405 Method not allowed for service
-    (405, METHOD_NOT_ALLOWED, "Method not allower");
+    (405, METHOD_NOT_ALLOWED, "Method not allowed");
     
-    /// 408 Request timeout.  ICAP server gave up waiting for a request from an ICAP client.
+    /// 408 Request Timeout
     (408, REQUEST_TIMEOUT, "Request Timeout");
 
     /// 500 Internal Server Error
