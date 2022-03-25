@@ -5,12 +5,11 @@ readme = "REAMDE.md"
 documentation = "https://docs.rs/icap"
 repository = "https://github.com/ikrivosheev/icap"
 license = "MIT/Apache-2.0"
-author = "Ivan Krivosheev <py.krivosheev@gmail.com>"
+authors = ["Ivan Krivosheev <py.krivosheev@gmail.com>"]
 description = """
 A set of types for representing ICAP requests and responses.
 """
 keywords = ["icap"]
-categories = ["web-programming"]
 edition = "2021"
 
 
