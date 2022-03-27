@@ -12,7 +12,7 @@ pub struct Request<T> {
     http_request: Option<HttpRequestParts>,
     http_response: Option<HttpResponseParts>,
 
-    body: Option<Body<T>>,
+    body: Body<T>,
 }
 
 #[non_exhaustive]
@@ -71,15 +71,15 @@ impl<T> Request<T> {
         &mut self.head.headers
     }
 
-    pub fn body(&self) -> &Option<Body<T>> {
+    pub fn body(&self) -> &Body<T> {
         &self.body
     }
 
-    pub fn body_mut(&mut self) -> &mut Option<Body<T>> {
+    pub fn body_mut(&mut self) -> &mut Body<T> {
         &mut self.body
     }
 
-    pub fn into_body(self) -> Option<T> {
-        self.body.map(|b| b.into_inner())
+    pub fn into_body(self) -> Body<T> {
+        self.body
     }
 }
